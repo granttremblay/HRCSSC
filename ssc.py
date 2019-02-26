@@ -18,8 +18,14 @@ try:
     from hrcsentinel import hrccore as hrc
 except ImportError:
     raise ImportError(
-        "hrcsentinel required. Download here: \
-        https://github.com/granttremblay/HRCsentinel")
+        "hrcsentinel required. Download here: https://github.com/granttremblay/HRCsentinel")
+
+# from multiprocessing import pool
+# from multiprocessing.dummy import pool as ThreadPool
+
+# # Leaving the below ThreadPool() argument empty will default to maximum cores available
+# pool = ThreadPool()
+
 
 hrc.styleplots()
 
